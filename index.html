@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <title>QUI*MAR Productos Químicos Industriales</title>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="57">
@@ -22,24 +23,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar">
             <!--<ul class="navbar-nav ml-auto">-->
-            <ul class="nav nav-pills ml-auto">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#main">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#inicio"><strong>Inicio</strong> <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#products">Productos</a>
-              </li>
+                <a href="#" data-toggle="modal" data-target="#modalNosotros" class="nav-link"><strong>Conózcanos</strong></a>
+              </li>              
               <li class="nav-item">
-                <a class="nav-link" href="#place">Servicios</a>
+                <a class="nav-link" href="#productos"><strong>Productos</strong></a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto"><strong>Contáctenos</strong></a>
               </li>            
               <li class="nav-item">
-                <a class="nav-link" href="#day-time">Horario</a>
-              </li>            
-              <li class="nav-item">
-                <a class="nav-link" href="#aboutUs">Conózcanos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-quimar" href="#contact">Contáctenos</a>
+                <a href="#" data-toggle="modal" data-target="#modalPG" class="btn btn-quimar">Pura Gestión</a>
               </li>
             </ul>
           </div>
@@ -47,7 +45,7 @@
       </nav>      
     <!--</header>-->
 
-    <main id="main">
+    <main id="inicio">
       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -68,16 +66,213 @@
                   <!--class="d-none d-md-block"-->
                   <p>Porque su negocio es único, lo ayudamos a cuidarlo como lo merece.</p>
                   <a href="#" data-toggle="modal" data-target="#modalNosotros" class="btn btn-outline-light">Conózcanos</a>
-                  <button type="button" class="btn btn-quimar">Contáctenos</button>
+                  <a class="btn btn-quimar" href="#contacto">Contáctenos</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Productos -->
+      <section id="productos">
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col text-center text-uppercase">
+              <small>Conozca nuestros</small>
+              <h2>Productos</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Cosmética Automotriz</h5>
+                  <!--<div class="bades">
+                    <span class="badge badge-info">Autopolish</span>
+                    <span class="badge badge-warning">Brillocar</span>
+                  </div>-->
+                  <img class="card-img" src="./assets/products/automotriz.jpg" alt="Automotriz">
+                  <p class="card-text">Champú siliconado, Revividores, Siliconas y Accesorios.</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>          
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Contenedores de residuos</h5>
+                  <img class="card-img" src="./assets/products/contenedores.jpg" alt="Contenedores">
+                  <p class="card-text">Pequeños y grandes volúmenes.</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>          
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Jardines y Mascotas</h5>
+                  <img class="card-img" src="./assets/products/mascotas.jpg" alt="Jardines y mascotas">
+                  <p class="card-text">Champús plagüicidas, Insecticidas y Control de plagas.</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>          
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Mantenimiento de Piscinas</h5>
+                  <img class="card-img" src="./assets/products/piscina.jpg" alt="Piscina">
+                  <p class="card-text">Cloros, Controladores de <abbr data-toggle="tooltip" title="Coeficiente que indica el grado de acidez o basicidad de una solución acuosa. El pH neutro es 7: si el número es mayor la solución es básica y si es menor es ácida.">pH</abbr>, Clarificadores y Accesorios.</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Materias primas</h5>
+                  <img class="card-img" src="./assets/products/materias.jpg" alt="Materias primas">
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>          
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Cuidado de pisos y muebles</h5>
+                  <img class="card-img" src="./assets/products/pisos.jpg" alt="Pisos y muebles">
+                  <p class="card-text">Ceras, Curadores, Removedores y Lustramuebles</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>          
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Equipamiento para limpieza profesional</h5>
+                  <img class="card-img" src="./assets/products/profesional.jpg" alt="Limpieza profesional">
+                  <p class="card-text">Carros hoteleros, Carros lavadores, Mopas, Prensa mopas, Equipo de limpieza de vidrios, etc.</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>          
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Productos químicos de limpieza profesional y doméstica</h5>
+                  <img class="card-img" src="./assets/products/quimicos.jpg" alt="Químicos">
+                  <p class="card-text">Hotelería, Gastronomía, Industria y Hogar.</p>
+                  <a href="#" class="btn btn-info">+ Información</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- /Productos -->
+      
+      <!-- Marcas -->
+      <div id="brands" class="container-fluid">
+        <section class="customer-logos slider">
+          <div class="slide"><img src="./assets/brands/elegante.png"></div>
+          <div class="slide"><img src="./assets/brands/3m-slogan.png"></div>
+          <div class="slide"><img src="./assets/brands/mavi.png"></div>
+          <div class="slide"><img src="./assets/brands/laflorestal.png"></div>
+          <div class="slide"><img src="./assets/brands/vileda.png"></div>
+          <div class="slide"><img src="./assets/brands/iberia.png"></div>
+          <div class="slide"><img src="./assets/brands/suiza.png"></div>
+          <div class="slide"><img src="./assets/brands/royco.webp"></div>
+          <div class="slide"><img src="./assets/brands/alpargatas.png"></div>
+          <div class="slide"><img src="./assets/brands/medianaranja.png"></div>
+          <div class="slide"><img src="./assets/brands/samantha.png"></div>
+          <div class="slide"><img src="./assets/brands/nuva.png"></div>     
+        </section>
+      </div>
+      <!-- /Marcas -->
+      
+      <!-- Contacto -->
+      <section id="contacto" class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col text-uppercase text-center">
+              <small>Estamos para asesorarlo</small>
+              <h2>Contáctenos</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 py-2">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12 col-md-6">
+                    <input type="text" class="form-control" placeholder="Apellido y Nombre" required>
+                  </div>                
+                  <div class="form-group col-12 col-md-6">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                  </div>
+                </div> 
+                <div class="form-row">
+                  <div class="form-group col">
+                    <textarea name="text" class="form-control form-control-lg" placeholder="¿Cuál es su consulta?"></textarea>
+                    <small class="form-text text-muted">
+                      Recuerde incluir el asunto de su consulta.
+                    </small>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <button type="button" class="btn btn-quimar btn-block">Enviar</button>
+                  </div>
+                </div>
+              </form>
+              <div class="alert alert-warning mt-2" role="alert">
+                Recibirá un correo de confirmación.
+              </div>
+            </div>
+          </div>       
+        </div>
+      </section>
+      <!-- /Contacto -->
+      
+      <!-- Horario -->
+      <section id="horario" class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h3>Lunes a Viernes</h3>
+              <p>8:30 a 17:00 hs.</p>
+            </div>
+            <div class="col text-center">
+              <h3>Sábado</h3>
+              <p>8:30 a 14:00 hs.</p>            
+            </div>
+            <div class="col text-center">
+              <h3>Domingo cerrado</h3>
+              <p>Consulte por nuestros horarios de verano.</p>            
+            </div>
+            <div class="col text-center">
+              <h3>Escríbanos</h3>
+              <a href="https://api.whatsapp.com/send?phone=5492246488967&text=(www.qui-mar.com.ar)%20Consulta:%20" class="float" target="_blank"><img src="./assets/images/logo-whatsapp.png" width="50px"></a>
+              <a href="https://m.me/productodelimpieza" class="float" target="_blank"><img src="./assets/images/logo-messenger.png" width="45px"></a>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <!-- /Horario -->
+
     </main>
 
-    <!-- Acerca de Nosotros -->
+    <!-- Acerca de Nosotros 
     <section id="aboutUs" class="mt-4">
       <div class="container">
         <div class="row">
@@ -94,262 +289,148 @@
         </div>
       </div>
     </section>
-    <!-- /Acerca de Nosotros -->
-
-    <!-- Productos -->
-    <section id="products" class="mt-4">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center text-uppercase">
-            <small>Conozca nuestros</small>
-            <h2>Productos</h2>
-          </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Cosmética Automotriz</h5>
-                <div class="bades">
-                  <span class="badge badge-info">Autopolish</span>
-                  <span class="badge badge-warning">Brillocar</span>
-                </div>
-                <img class="card-img" src="./assets/products/automotriz.jpg" alt="Automotriz">
-                <p class="card-text">Champú siliconado, Revividores, Siliconas y Accesorios.</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Contenedores de residuos</h5>
-                <img class="card-img" src="./assets/products/contenedores.jpg" alt="Contenedores">
-                <p class="card-text">Pequeños y grandes volúmenes.</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Jardines y Mascotas</h5>
-                <img class="card-img" src="./assets/products/mascotas.jpg" alt="Jardines y mascotas">
-                <p class="card-text">Champús plagüicidas, Insecticidas y Control de plagas.</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mantenimiento de Piscinas</h5>
-                <img class="card-img" src="./assets/products/piscina.jpg" alt="Piscina">
-                <p class="card-text">Cloros, Controladores de <abbr data-toggle="tooltip" title="Coeficiente que indica el grado de acidez o basicidad de una solución acuosa. El pH neutro es 7: si el número es mayor la solución es básica y si es menor es ácida.">pH</abbr>, Clarificadores y Accesorios.</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Materias primas</h5>
-                <img class="card-img" src="./assets/products/materias.jpg" alt="Materias primas">
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Cuidado de pisos y muebles</h5>
-                <img class="card-img" src="./assets/products/pisos.jpg" alt="Pisos y muebles">
-                <p class="card-text">Ceras, Curadores, Removedores y Lustramuebles</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Equipamiento para limpieza profesional</h5>
-                <img class="card-img" src="./assets/products/profesional.jpg" alt="Limpieza profesional">
-                <p class="card-text">Carros hoteleros, Carros lavadores, Mopas, Prensa mopas, Equipo de limpieza de vidrios, etc.</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Productos químicos de limpieza profesional y doméstica</h5>
-                <img class="card-img" src="./assets/products/quimicos.jpg" alt="Químicos">
-                <p class="card-text">Hotelería, Gastronomía, Industria y Hogar.</p>
-                <a href="#" class="btn btn-primary">+ Información</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- /Productos -->
-    
-    <!-- Ubicación -->
-    <section id="place">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 col-lg-6 px-0 py-4 text-right">
-            <img src="assets/images/servicios.png" alt="Nuestros servicios." />
-          </div>
-          <div class="col-12 col-lg-6 py-4 align-self-center">
-            <h2>¿Por qué elegirnos?</h2>
-            <ul>
-              <li>Estamos cerca suyo.</li>
-              <li>Máxima comodidad.</li>
-              <li>Somos locales.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Ubicación -->
-    
-    <!-- Contacto -->
-    <section id="contact" class="py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col text-uppercase text-center">
-            <small>Estamos para asesorarlo</small>
-            <h2>Contáctenos</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 py-2">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Apellido y Nombre" required>
-                </div>                
-                <div class="form-group col-12 col-md-6">
-                  <input type="email" class="form-control" placeholder="Correo Electrónico" required>
-                </div>
-              </div> 
-              <div class="form-row">
-                <div class="form-group col">
-                  <textarea name="text" class="form-control form-control-lg" placeholder="¿Cuál es su consulta?"></textarea>
-                  <small class="form-text text-muted">
-                    Recuerde incluir el asunto de su consulta.
-                  </small>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="col">
-                  <button type="button" class="btn btn-quimar btn-block">Enviar</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>       
-      </div>
-    </section>
-    <!-- /Contacto -->
-    
-    <!-- Horario -->
-    <section id="day-time" class="py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <h3>Lunes a Viernes</h3>
-            <p>8:30 a 17:00 hs.</p>
-          </div>
-          <div class="col text-center">
-            <h3>Sábado</h3>
-            <p>8:30 a 14:00 hs.</p>            
-          </div>
-          <div class="col text-center">
-            <h3>Domingo cerrado</h3>
-            <p>Consulte por nuestros horarios de verano.</p>            
-          </div>          
-        </div> 
-      </div>
-    </section>
-    <!-- /Horario -->
+     /Acerca de Nosotros -->
 
     <footer id="footer" class="pb-4 pt-4">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="">Horarios de atención</a>
+        <div class="row">
+          <div class="col">
+
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="">Capacitación</a>
+        </div>
+
+        <div class="row text-left mb-4">
+
+          <div class="col-sm-6">
+            <i class="far fa-copyright"></i> <strong>2018 QUI*MAR</strong><br>
+            Productos químicos industriales<br><br>
+            <a href="https://www.facebook.com/productodelimpieza" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/qui.mar.srl/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.twitter.com/quimicadelmar" target="_blank"><i class="fab fa-twitter fa-2x"></i></a><br><br>     
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="">Repartos</a>
+
+          <div class="col-sm-6">
+            <address>
+              <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Calle 40 N°444 Las Toninas<br>
+              <i class="fas fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:info.quimar@gmail.com">info.quimar@gmail.com</a><br>
+              <i class="fas fa-phone"></i>&nbsp;&nbsp;(02246) <a href="tel:+5492246431663">431663</a>  / <a href="tel:+5492246431912">431912</a><br>
+              <i class="fab fa-whatsapp"></i>&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=5492246488967&text=(www.qui-mar.com.ar)%20Consulta:%20" class="float" target="_blank">+54 9 2246 409188</a><br><strong>No tenemos sucursales.</strong>
+            </address>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="">Ubicación</a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="">Contáctenos</a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="">Redes Sociales</a>
+
+        </div>
+
+        <div class="row">
+          <div class="col text-left">
+            <small>Hecho con <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> en La Costa Atlántica</small>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalNosotros" tabindex="-1" role="dialog" aria-labelledby="modalNosotrosTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <button type="button" id="btnScroll" class="btn btn-up" onclick="toUp()"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i></button>
+
+    <!-- Modal PG-->
+    <div class="modal fade" id="modalPG" tabindex="-1" role="dialog" aria-labelledby="modalPGTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalNosotrosTitle">Acerca de Nosotros</h5>
+            <h5 class="modal-title" id="modalPGTitle">Pura Gestión</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="modal-body modal-lg text-justify">
+            <p><i>Estimado cliente:</i></p>
+            <p><i>Nuestra empresa <strong>QUI*MAR</strong> dedicada a la elaboración y venta de <strong>productos químicos industriales para la limpieza e higiene institucional,</strong> le presenta una propuesta comercial pre-temporada a la que llamamos <strong>"Pura Gestión"</strong>.</i></p>
+            <p><i>¿Qué es <strong>"Pura Gestión"</strong>? Es un servicio integral que le ofrecemos de forma gratuita.</i></p>
+            <p><i>¿Para qué <strong>"Pura Gestión"</strong>? El objetivo de dicha propuesta es acompañarlo en su labor diaria trabajando juntos para lograr mayores beneficios y óptimos resultados. Está centrada en lograr la reducción de costos y mejorar las prácticas de limpieza con productos y herramientas apropiadas que no sólo facilitan el trabajo sino que además ahorran el tiempo del personal afectado a la tarea.</i></p>
+            <p><i>¿Cómo se brinda <strong>"Pura Gestión"</strong>? De la forma en que se detalla:</i></p>
+            <ul>
+              <li><i>Se relevan datos sobre cómo se realiza la limpieza de las diferentes áreas, como así también el tiempo y personal afectado.</i></li>
+              <li><i>Procesamos los datos obtenidos y elegimos la opción más óptima, en productos y herramientas, para cada sector.</i></li>
+              <li><i>Ayudamos a la reducción de costos al racionalizar la cantidad y variedad de productos químicos utilizados.</i></li>
+              <li><i>Aplicamos códigos de colores por área.</i></li>
+              <li><i>Capacitamos al personal de limpieza, en su lugar de trabajo, sobre técnicas y métodos que faciliten y optimicen su labor.</i></li>
+            </ul>
+            <p><i>Quince años en el Partido de la Costa, avalan nuestra experiencia y desempeño, en el que se destacan, <strong>la atención calificada y el servicio personalizado</strong> a nuestros clientes, y la excelente relación calidad-precio de nuestros productos. Así mismo, disponemos de una <strong>organizada estructura edilicia y logística,</strong> necesarias para la distribución de nuestros productos dentro de la zona.</i></p>
+            <p><i>Saludos cordiales.</i></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <!--<button type="button" class="btn btn-primary">Guardar</button>-->
+            <!--<button type="button" class="btn btn-quimar">Contáctenos</button>-->
           </div>
         </div>
       </div>
     </div>    
-    <!-- /Modal -->
+    <!-- /Modal PG-->
+
+    <!-- Modal Nosotros-->
+    <div class="modal fade" id="modalNosotros" tabindex="-1" role="dialog" aria-labelledby="modalNosotrosTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalNosotrosTitle">Nuestra Empresa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modal-lg text-justify">
+            <p><i>Estimado:</i></p>
+            <p><i>Le presentamos nuestra empresa <strong>QUI*MAR</strong> dedicada a la elaboración y venta de <strong>productos químicos industriales para la limpieza e higiene institucional,</strong> con la finalidad de poder establecer lazos comerciales.</i></p>
+            <p><i>Quince años en el Partido de la Costa, avalan nuestra experiencia y desempeño, en el que se destacan, <strong>la atención calificada y el servicio personalizado</strong> a nuestros clientes, y la excelente relación calidad - precio de nuestros productos. Así mismo, disponemos e una <strong>organizada estructura edilicia y logística,</strong> necesarias para la distribución de nuestros productos dentro de la zona.</i></p>
+            <p><i>En la actualidad, nuestros productos, han ganado reconocimiento debido a la trayectoria comercial que nos caracteriza y en especial, gracias a <strong>formulaciones de avanzada</strong> podemos destacar productos "BICOMBINADOS" y "TRICOMBINADOS", que permiten simplificar y optimizar la limpieza institucional.</i></p>
+            <p><i>Ofrecemos permanentemente la atención personalizada por parte de dueños y empleados lo que permite que usted pueda despejar sus dudas y asesorarse correctamente sobre el uso de cada uno de nuestros productos.</i></p>
+            <p><i>Para ofrecer a nuestros clientes una atención y servicio integral, en todo lo que respecta a la limpieza y mantenimiento de diferentes áreas, contamos con formulaciones de propias y de avanzada para la elaboración de los productos químicos, habiendo además incorporado más de 1.800 artículos a través de la representación directa de las siguientes empresas:</i></p>
+            <ul>
+              <li><i><strong>PAPELERA SAMSENG</strong> con un amplio surtido en papeles higiénicos, toallas intercaladas, bobinas y dispenser;</i></li>
+              <li><i><strong>SUIZA</strong> con toda la línea de ceras acrílicas y en pasta de primera calidad, como así también la línea de curadores, quita ceras y lustramuebles;</i></li>
+              <li><i><strong>NUVA y ESE</strong> (Alemania) con Contenedores de residuos comerciales e institucionales que cumplen NORMAS europeas EN840 y certificaciones de calidad;</i></li>
+              <li><i><strong>ROYCO</strong> con Equipos para la limpieza profesional de vidrios, pisos, grandes áreas, carros de limpieza y para hotelería;</i></li>
+              <li><i>Aromatizadores de ambiente a pilas y repuestos aerosol;</li>
+              <li><i><strong>CAPTOR</strong> con Tapetes de recepción y para lluvia (logo opcional);</i></li>
+              <li><i><strong>ALPARGATAS, MEDIA NARANJA, SILVERTEX, LA FLORESTAL</strong> con una amplia gama de productos textiles (trapos de piso, rejillas, repasadores, microfibras);</i></li>
+              <li><i><strong>SAMANTHA</strong> con una gran variedad en escobillones, escobas y secadores, entre otros artículos;</i></li>
+              <li><i><strong>IBERIA</strong> con una novedosa línea de productos antihumedad y aromatizadores de placards;</i></li>
+              <li><i><strong>3M y VILEDA</strong> en sus líneas de esponjas, estropajos, guantes, cintas antideslizantes y varios artículos;</li>
+              <li><i><strong>MAVI</strong> con una amplia gama de productos y aparatajes para limpieza y mantenimiento de piscinas.</i></li>
+            </ul>
+            <p><i>Para información adicional, nuestras operadoras están esperando su llamado para resolver cualquier interrogante que pueda tener.</i></p>
+            <p><i>Saludos cordiales</i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <!--<a class="btn btn-quimar" href="#contacto">Contáctenos</a>-->
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!-- /Modal Nosotros-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="index.js"></script>
+    <script>
+      window.onscroll = function(){
+        scrollFunction();
+      };
+      function scrollFunction(){
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20){
+          document.getElementById("btnScroll").style.display = "block";
+
+        }else{
+          document.getElementById("btnScroll").style.display = "none";
+        }
+      } 
+
+      function toUp(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop=0;
+      }
+    </script>    
   </body>
 </html>
