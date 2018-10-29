@@ -35,15 +35,15 @@
     border-color: #ffffff;
 }
 
-                    #btnScroll{
-                        display: none;
-                        position: fixed;
-                        bottom: 30px;
-                        right: 40px;
-                        z-index: 99;
-                        cursor: pointer;
-                        padding: 16px;
-                    }
+#btnScroll{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 16px;
+}
 
 #header img {
 	width: 150px;
