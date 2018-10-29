@@ -1,3 +1,8 @@
+.slogan {
+    font-family: 'Lovers Quarrel', cursive;
+    /* font-family: 'Norican', cursive; */
+    font-size: 3rem;
+}
 .text-quimar {
 	color: #ce1920 !important;  /* #cf1a21 */
 }
